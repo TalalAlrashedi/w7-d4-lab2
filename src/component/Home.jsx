@@ -38,14 +38,14 @@ const Home = () => {
       <h1 className="text-4xl font-bold text-blue-700 mb-8 text-center">Task List</h1>
 
 
-      <div className="w-full max-w-xl bg-white p-6 rounded shadow mb-6">
+      <div className="w-100 max-w-xl bg-violet-100 p-6 rounded shadow mb-6">
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <input
             type="text"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
             placeholder="Add a new task..."
-            className="flex-grow px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-violet-300"
+            className="flex-grow px-4 py-2 border border-gray-300 rounded "
           />
           <button
             onClick={addFunction}
@@ -57,13 +57,13 @@ const Home = () => {
       </div>
 
 
-      <div className="w-full max-w-xl mb-8">
+      <div className="w-full flex flex-col justify-center items-center max-w-xl mb-8">
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search tasks..."
-          className="w-full px-4 py-2 border border-blue-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-300 bg-white"
+          className=" px-4 py-2 border border-blue-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-300 bg-white"
         />
       </div>
 
